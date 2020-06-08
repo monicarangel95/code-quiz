@@ -1,7 +1,7 @@
 
 // highscore variables
-var initialsInput = document.querySelector("#initials-text");
 var initialsForm = document.querySelector("#initials-form");
+var initialsInput = document.querySelector("#initials-text");
 var initialsList = document.querySelector("#initials-list");
 var initialsScores = [];
 init();
@@ -27,7 +27,6 @@ function init() {
 function storeInitials() {
     localStorage.setItem("initialsScores", JSON.stringify(initialsScores));
 }
-
 // Form submitted
 initialsForm.addEventListener("submit", function (event) {
     event.preventDefault();
