@@ -5,20 +5,20 @@ var index = 0;
 let timeInterval;
 let selectedAnswer;
 $(document).ready(function(){
-    $(".next-btn").hide(); // hide next button
-    $(".highscore-btn").hide(); // hide highscore button
+    $(".next-btn").hide(); // hide next 
+    $(".highscore-btn").hide(); // hide highscore
     $(".question-container").hide(); // hide question container
-    $(".timer").hide(); // hide timer
+    $(".timer").hide(); // hide time tracker
     $(".green-alert").hide(); // hide green alert
     $(".red-alert").hide(); // hide red alert
-    // Start quiz function
+    // Start quiz
     $(".start-btn").on("click",function(){
-    $(".timer").show(); // show timer
-    $(".start-btn").hide(); // hide start button
-    $(".question-container").show(); //show question and answer choices 
-    $(".next-btn").show(); // hide next button
+    $(".timer").show(); // show time tracker
+    $(".start-btn").hide(); // hide start 
+    $(".question-container").show(); //show Q & A's
+    $(".next-btn").show(); // hide next
     startTimer();
-    showQuestions(); // show questions function
+    showQuestions(); // show questions
     });
     // Timer 
     function startTimer(){
