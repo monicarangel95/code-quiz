@@ -74,20 +74,21 @@ const questions = [
     {
         question: "What is the syntax for creating a function in Javascript named booFunction?",
         answers: [
+            { text: "function: = booFunction()"},
+            { text: "function+ booFunction()"},
             { text: "function = booFunction()"},
             { text: "function booFunction()"},
-            { text: "function := booFunction()"},
-            { text: "function: booFunction()"}
+
         ],
         correct: "function booFunction()"
     },
     {
         question: "How to call a function in Javascript?",
         answers: [
-            { text: "call booFunction();"},
-            { text: "call function booFunction();"},
             { text: "booFunction();"},
-            { text: "function booFunction();"}
+            { text: "function call booFunction();"},
+            { text: "Function();"},
+            { text: "function booFunction();"},
         ],
         correct: "booFunction();"
         
