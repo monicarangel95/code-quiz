@@ -7,59 +7,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="index.js"></script>
-    <script defer src="questions.js"></script>
-
+    <script defer src="assets/js/index.js"></script>
+    <script defer src="assets/js/questions.js"></script>
     <title>Code Quiz</title>
 </head>
+<!-- Body -->
 
 <body>
+    <!--  Nav -->
+    <!-- quiz container -->
     <div class="container">
-        <!--  Nav -->
-
-        <!-- Container -->
         <div class="card text-center quiz-container">
             <div class="card-header">
                 <h2>Javascript Quiz</h2>
             </div>
-
             <!-- Timer -->
             <div class="card-header" id="time-tracker"></div>
-            <div class="container">
-                <div id="container question" class="hide">
-                    <div id="question">
-
-                    </div>
-                    <br>
-                    <div id "answer-btn"></div>
-                    <button type="button" class="btn btn-dark">Answer 1</button>
-                    <button type="button" class="btn btn-dark">Answer 2</button>
-                    <button type="button" class="btn btn-dark">Answer 3</button>
-                    <button type="button" class="btn btn-dark">Answer 4</button>
-                </div>
+            <!-- red alert -->
+            <div class="alert alert-danger red-alert" role="alert">
+                Incorrect
             </div>
-            <br>
-            <br>
-            <div class="controls">
-                <div id="container controls class=" hide"></div>
-                <button type="button" class="btn btn-primary">Start</button>
-                <button type="button" class="btn btn-success hide">Next</button>
-                <button type="button" a href="highscores.html" class="highscore-btn btn btn-info">Highscore</a>
-            </div>
-
             <!-- green alert -->
-            <div class="green-red alert Container">
-                <div class="alert alert-success green-alert" role="alert">
-                    Correct
+            <div class="alert alert-success green-alert" role="alert">
+                Correct
+            </div>
+            <!-- questions input -->
+            <div class="card-body question-container">
+                <h5 class="card-title">
+                    <div class="question">Question</div>
+                </h5>
+                <!-- answers input -->
+                <div id="answer-btns" class="btn-grid">
+                    <p>A.<button class="btn ans1">Answer 1</button></p>
+                    <p>B.<button class="btn ans2">Answer 2</button></p>
+                    <p>C<button class="btn ans3">Answer 3</button>
+                    <p>D.<button class="btn ans4">Answer 4</button>
                 </div>
-
-                <!-- red alert -->
-                <div class="alert alert-danger red-alert" role="alert">
-                    Incorrect
+            </div>
+            <!-- footer buttons -->
+            <div class="card-footer text-muted">
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn btn-primary">Start Quiz</button>
+                    <button id="next-btn" class="next-btn btn btn-success hide">Next</button>
+                    <a href="highscores.html" class="highscore-btn btn btn-info">Enter Highscore</a>
                 </div>
             </div>
         </div>
