@@ -28,5 +28,5 @@ WHEN the game is over
 
 The following animation demonstrates the application functionality:
 
-![picture](.Assets/code-quiz-snap.png)
+![picture](Assets/code-quiz-snap.png)
 
